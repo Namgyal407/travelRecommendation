@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <title>TravelBloom | About Us</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      color: #fff;
+      background:
+        linear-gradient(115deg, rgba(5, 20, 40, 0.86), rgba(8, 29, 54, 0.66)),
+        url("https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?auto=format&fit=crop&w=1800&q=80")
+          center / cover no-repeat fixed;
+      min-height: 100vh;
+    }
+
+    .navbar {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 24px;
+      padding: 10px 28px;
+      background: rgba(6, 24, 44, 0.9);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(6px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 220px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .brand svg {
+      width: 46px;
+      height: 46px;
+      flex-shrink: 0;
+    }
+
+    .brand-name {
+      margin: 0;
+      font-size: 32px;
+      line-height: 1;
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    .nav-links {
+      justify-self: center;
+      display: flex;
+      gap: 34px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 19px;
+      font-weight: 600;
+      opacity: 0.9;
+    }
+
+    .nav-links a.active,
+    .nav-links a:hover {
+      opacity: 1;
+      color: #66d5cc;
+    }
+
+    .about-wrap {
+      max-width: 1160px;
+      margin: 38px auto 56px;
+      padding: 0 28px;
+    }
+
+    .about-title {
+      margin: 0 0 18px;
+      font-size: 56px;
+      line-height: 1;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .about-panel {
+      background: rgba(6, 22, 40, 0.64);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 16px;
+      padding: 24px 26px;
+      margin-bottom: 24px;
+    }
+
+    .about-panel p {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.75;
+      color: #eaf3ff;
+    }
+
+    .team-block {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 22px;
+      align-items: stretch;
+      background: rgba(6, 22, 40, 0.64);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .team-label {
+      margin: 0;
+      padding: 32px 24px;
+      font-size: 58px;
+      line-height: 0.92;
+      font-weight: 700;
+      background: rgba(102, 213, 204, 0.18);
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(160px, 1fr));
+      gap: 18px;
+      padding: 24px;
+    }
+
+    .team-card {
+      background: rgba(8, 36, 66, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 14px;
+      padding: 18px 16px 16px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      margin: 0 auto 10px;
+      background: #fff;
+      color: #0b355e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .team-card h3 {
+      margin: 0 0 6px;
+      font-size: 24px;
+      line-height: 1.2;
+    }
+
+    .team-card p {
+      margin: 0 0 14px;
+      font-size: 15px;
+      color: #dce9ff;
+      line-height: 1.45;
+    }
+
+    .role-badge {
+      display: inline-block;
+      background: #108da3;
+      border-radius: 999px;
+      padding: 8px 16px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    @media (max-width: 960px) {
+      .team-block {
+        grid-template-columns: 1fr;
+      }
+
+      .team-label {
+        font-size: 44px;
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="travel_recommendation.html">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <rect x="1.5" y="1.5" width="45" height="45" rx="3" fill="#fff" stroke="#000" stroke-width="3"></rect>
+        <path d="M3 38 L18 24 L24 30 L33 20 L46 11" fill="none" stroke="#000" stroke-width="3"></path>
+        <path d="M3 43 Q16 34 24 39 Q35 46 46 39" fill="none" stroke="#000" stroke-width="3"></path>
+        <line x1="11" y1="3" x2="3" y2="20" stroke="#000" stroke-width="3"></line>
+        <line x1="24" y1="3" x2="3" y2="32" stroke="#000" stroke-width="3"></line>
+      </svg>
+      <h1 class="brand-name">TravelBloom</h1>
+    </a>
+
+    <div class="nav-links">
+      <a href="travel_recommendation.html">Home</a>
+      <a class="active" href="about_us.html">About Us</a>
+      <a href="contact_us.html">Contact Us</a>
+    </div>
+    <div></div>
+  </nav>
+
+  <main class="about-wrap">
+    <h2 class="about-title">About Us</h2>
+
+    <section class="about-panel">
+      <p>
+        TravelBloom is a travel recommendation company focused on helping people discover meaningful
+        places around the world. We combine curated destination insights with a simple digital
+        experience so travelers can quickly find places that match their interests. Our mission is to
+        make trip planning inspiring, clear, and stress-free, whether you are exploring beaches,
+        temples, cities, or cultural landmarks.
+      </p>
+    </section>
+
+    <section id="contact" class="team-block">
+      <h3 class="team-label">Our<br />Team</h3>
+      <div class="team-grid">
+        <article class="team-card">
+          <div class="avatar">JD</div>
+          <h3>John Doe</h3>
+          <p>Leads company vision, business strategy, and long-term growth initiatives.</p>
+          <span class="role-badge">CEO</span>
+        </article>
+
+        <article class="team-card">
+          <div class="avatar">CT</div>
+          <h3>Celina Thomas</h3>
+          <p>Drives product and engineering delivery for a seamless customer experience.</p>
+          <span class="role-badge">Team Lead</span>
+        </article>
+
+        <article class="team-card">
+          <div class="avatar">MT</div>
+          <h3>Mike Tyson</h3>
+          <p>Manages client success, service operations, and strategic partnerships.</p>
+          <span class="role-badge">Delivery Head</span>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
