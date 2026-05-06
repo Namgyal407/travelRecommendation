@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <title>TravelBloom | Contact Us</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      color: #fff;
+      background:
+        linear-gradient(115deg, rgba(5, 20, 40, 0.88), rgba(8, 29, 54, 0.68)),
+        url("https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1800&q=80")
+          center / cover no-repeat fixed;
+      min-height: 100vh;
+    }
+
+    .navbar {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 24px;
+      padding: 10px 28px;
+      background: rgba(6, 24, 44, 0.9);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(6px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 220px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .brand svg {
+      width: 46px;
+      height: 46px;
+      flex-shrink: 0;
+    }
+
+    .brand-name {
+      margin: 0;
+      font-size: 32px;
+      line-height: 1;
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    .nav-links {
+      justify-self: center;
+      display: flex;
+      gap: 34px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 19px;
+      font-weight: 600;
+      opacity: 0.9;
+    }
+
+    .nav-links a.active,
+    .nav-links a:hover {
+      opacity: 1;
+      color: #66d5cc;
+    }
+
+    .contact-wrap {
+      max-width: 620px;
+      margin: 50px auto;
+      padding: 0 28px;
+    }
+
+    .contact-title {
+      margin: 0 0 12px;
+      font-size: 54px;
+      line-height: 1;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .contact-subtitle {
+      margin: 0 0 38px;
+      font-size: 18px;
+      line-height: 1.55;
+      text-align: center;
+      color: #dce9ff;
+    }
+
+    .contact-form {
+      background: rgba(6, 22, 40, 0.68);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 18px;
+      padding: 32px;
+    }
+
+    .form-group {
+      margin-bottom: 24px;
+    }
+
+    .form-group:last-of-type {
+      margin-bottom: 28px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #e0edff;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.06);
+      color: #fff;
+      font-size: 16px;
+      font-family: inherit;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    textarea::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      border-color: rgba(102, 213, 204, 0.6);
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 0 3px rgba(102, 213, 204, 0.15);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 140px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 16px 24px;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #1a9e92, #66d5cc);
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(102, 213, 204, 0.3);
+    }
+
+    .submit-btn:active {
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="travel_recommendation.html">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <rect x="1.5" y="1.5" width="45" height="45" rx="3" fill="#fff" stroke="#000" stroke-width="3"></rect>
+        <path d="M3 38 L18 24 L24 30 L33 20 L46 11" fill="none" stroke="#000" stroke-width="3"></path>
+        <path d="M3 43 Q16 34 24 39 Q35 46 46 39" fill="none" stroke="#000" stroke-width="3"></path>
+        <line x1="11" y1="3" x2="3" y2="20" stroke="#000" stroke-width="3"></line>
+        <line x1="24" y1="3" x2="3" y2="32" stroke="#000" stroke-width="3"></line>
+      </svg>
+      <h1 class="brand-name">TravelBloom</h1>
+    </a>
+
+    <div class="nav-links">
+      <a href="travel_recommendation.html">Home</a>
+      <a href="about_us.html">About Us</a>
+      <a class="active" href="contact_us.html">Contact Us</a>
+    </div>
+    <div></div>
+  </nav>
+
+  <main class="contact-wrap">
+    <h2 class="contact-title">Get in Touch</h2>
+    <p class="contact-subtitle">
+      Have questions or feedback? We'd love to hear from you. Fill out the form below and we'll
+      get back to you as soon as possible.
+    </p>
+
+    <form class="contact-form" method="POST" action="#">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your full name"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email address"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Write your message here..."
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </main>
+</body>
+</html>
